@@ -1,4 +1,3 @@
-# Challenge 2 Data Science LATAM - Telecom X
 # 📊 Telecom X - Análisis de Evasión de Clientes (Churn)
 
 🚧 **Estado del Proyecto:** En Desarrollo 🚧
@@ -11,19 +10,26 @@ Para ejecutar este proyecto, necesitarás las siguientes herramientas y bibliote
 - **Python 3.x**
 - **Pandas** (Manipulación y limpieza de datos)
 - **NumPy** (Operaciones numéricas)
-- **Matplotlib / Seaborn** (Visualización de datos - *en desarrollo*)
+- **Matplotlib / Seaborn** (Visualización de datos)
 - **Entorno:** Google Colab o Jupyter Notebook
 
 ## 🚀 Instalación y Cómo ejecutar el proyecto
 1. Clona este repositorio en tu máquina local ejecutando en tu terminal:
    `git clone https://github.com/electroandblue/challenge2-data-science-LATAM.git`
-2. Abre el archivo principal `TelecomX_LATAM.ipynb` en tu entorno preferido (se recomienda Google Colab).
-3. **Paso crucial:** El código requiere el archivo de datos crudos. Asegúrate de tener el archivo `TelecomX_Data.json` a la mano.
-4. Ejecuta las celdas en orden. En la sección de Extracción, el sistema te pedirá subir el archivo JSON.
+2. Abre el archivo principal `.ipynb` en tu entorno preferido (se recomienda Google Colab).
+3. **Paso crucial:** Asegúrate de tener el archivo de datos `TelecomX_Data.json` cargado en el entorno.
+4. Ejecuta las celdas en orden.
 
-## ⚠️ Posibles problemas y soluciones
-- **Error `FileNotFoundError` al iniciar:** Esto ocurre si Google Colab se reinicia y pierde el archivo de datos temporales. **Solución:** Vuelve a ejecutar la celda de la fase de Extracción que activa el botón de "Elegir archivos" y vuelve a cargar el `TelecomX_Data.json`.
-
+## 📂 Estructura del Análisis
+1. **Extracción:** (Completado) Carga de datos desde formato JSON.
+2. **Transformación:** (Completado) Limpieza de nulos, eliminación de espacios vacíos en `Churn`, estandarización de columnas y creación de la variable `Cuentas_Diarias`.
+3. **Carga y Análisis Exploratorio:** (En proceso)
+   - ✅ Análisis descriptivo general.
+   - ✅ Distribución general de la evasión.
+   - ✅ Análisis de evasión por variables categóricas (Género, Contrato, Método de Pago).
+   - ⏳ Análisis de evasión por variables numéricas.
+   - ⏳ Análisis de correlación (Extra).
+4. **Informe Final y Conclusiones:** (Pendiente)
 ## 📂 Estructura del Análisis
 1. **Extracción:** Carga de datos desde formato JSON.
 2. **Transformación:** Limpieza de nulos, eliminación de espacios vacíos en variables clave (`Churn`), estandarización de columnas y creación de la variable calculada `Cuentas_Diarias`.
