@@ -1,37 +1,30 @@
 # 📊 Telecom X - Análisis de Evasión de Clientes (Churn)
 
-🚧 **Estado del Proyecto:** En Desarrollo 🚧
+¡Desafío de Data Science completado! 🚀 Este proyecto analiza los factores que influyen en la pérdida de clientes de una empresa de telecomunicaciones, utilizando técnicas de ETL y Análisis Exploratorio de Datos (EDA).
 
-## 📝 Descripción del Proyecto
-Este proyecto forma parte del desafío de **Telecom X**, una empresa de telecomunicaciones que enfrenta una alta tasa de cancelación de clientes (Churn). El objetivo es aplicar procesos de ETL y un Análisis Exploratorio de Datos (EDA) para identificar los factores clave de esta evasión y ayudar al equipo de Data Science a crear modelos predictivos.
+## 📝 Resumen de Hallazgos (Insights Clave)
+A través del análisis con Python y Seaborn, identificamos puntos críticos para el negocio:
+* **Contrato Crítico:** El **42.71%** de los clientes con contrato mensual abandonan la empresa.
+* **Fuga en Fibra Óptica:** Es el servicio con mayor deserción (**41.89%**), sugiriendo una revisión de calidad o precio.
+* **Sensibilidad al Precio:** Los clientes que se van pagan, en promedio, **$74.44**, un 21% más que los clientes leales ($61.27).
+* **Retención Temprana:** La mayoría de las cancelaciones ocurren antes de los 18 meses de antigüedad.
 
-## 🛠️ Dependencias
-Para ejecutar este proyecto, necesitarás las siguientes herramientas y bibliotecas de Python:
-- **Python 3.x**
-- **Pandas** (Manipulación y limpieza de datos)
-- **NumPy** (Operaciones numéricas)
-- **Matplotlib / Seaborn** (Visualización de datos)
-- **Entorno:** Google Colab o Jupyter Notebook
+## 🛠️ Tecnologías Utilizadas
+- **Python 3.12**
+- **Pandas & NumPy** (Procesamiento de datos)
+- **Matplotlib & Seaborn** (Visualización estadística)
+- **Git & GitHub** (Control de versiones)
+- **Google Colab** (Entorno de desarrollo)
 
-## 🚀 Instalación y Cómo ejecutar el proyecto
-1. Clona este repositorio en tu máquina local ejecutando en tu terminal:
-   `git clone https://github.com/electroandblue/challenge2-data-science-LATAM.git`
-2. Abre el archivo principal `.ipynb` en tu entorno preferido (se recomienda Google Colab).
-3. **Paso crucial:** Asegúrate de tener el archivo de datos `TelecomX_Data.json` cargado en el entorno.
-4. Ejecuta las celdas en orden.
+## 📂 Estructura del Proyecto
+1. **Extracción:** Carga de datos desde JSON anidado.
+2. **Transformación:** Limpieza de nulos, estandarización de tipos y creación de la variable `Cuentas_Diarias`.
+3. **Análisis Exploratorio (EDA):**
+   - ✅ Análisis descriptivo y distribución de Churn.
+   - ✅ Impacto de variables categóricas (Contrato, Género, Pago).
+   - ✅ Impacto de variables numéricas (Cargos Mensuales, Antigüedad).
+   - ✅ **Extra:** Matriz de correlación térmica.
+4. **Informe Final:** Conclusiones estratégicas y recomendaciones para reducir la evasión.
 
-## 📂 Estructura del Análisis
-1. **Extracción:** (Completado) Carga de datos desde formato JSON.
-2. **Transformación:** (Completado) Limpieza de nulos, eliminación de espacios vacíos en `Churn`, estandarización de columnas y creación de la variable `Cuentas_Diarias`.
-3. **Carga y Análisis Exploratorio:** (En proceso)
-   - ✅ Análisis descriptivo general.
-   - ✅ Distribución general de la evasión.
-   - ✅ Análisis de evasión por variables categóricas (Género, Contrato, Método de Pago).
-   - ⏳ Análisis de evasión por variables numéricas.
-   - ⏳ Análisis de correlación (Extra).
-4. **Informe Final y Conclusiones:** (Pendiente)
-## 📂 Estructura del Análisis
-1. **Extracción:** Carga de datos desde formato JSON.
-2. **Transformación:** Limpieza de nulos, eliminación de espacios vacíos en variables clave (`Churn`), estandarización de columnas y creación de la variable calculada `Cuentas_Diarias`.
-3. **Carga y Análisis:** (En proceso)
-4. **Informe Final y Conclusiones:** (Pendiente)
+## 🚀 Cómo ver el proyecto
+Puedes abrir el archivo `.ipynb` directamente en este repositorio para ver los gráficos y las celdas de código ejecutadas.
